@@ -13,25 +13,51 @@ h2 {
 	width: 600px;
 }
 
-#btns li p {
-	font-weight: bold;
+#btns {
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
 li {
-	list-style: none;
+	float: left;
+	background-color: #004466;
+	margin-right: 8px;
+	width: 80px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
 
+li:hover {
+	background-color: #0077b3;
+}
+
+li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 
 form {
-	border: 1px solid #004466;;
+	border: 1px solid #004466;
 	border-radius: 5px;
 	width: 80%;
 	padding: 20px;
 	margin-bottom: 30px;
 }
 
-form#main {
-	margin-bottom: 30px;
+form.main {
+	margin-bottom: 20px;
 }
 
 label {
@@ -44,20 +70,17 @@ input {
 	border-radius: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	padding-left: 5px;
 }
 
 textarea {
-	height: 200px;
-	width: 475px;
+	height: 180px;
+	width: 470px;
 	border-radius: 5px;
 	border-color: grey;
 	margin-top: 10px;
-}
-
-input[type=radio] {
-	margin-top: 20px;
-	margin-bottom: 10px;
-	margin-left: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
 }
 
 input[type=submit] {
@@ -69,6 +92,7 @@ input[type=submit] {
 	padding: 10px 30px;
 	font-size: 10px;
 	text-transform: uppercase;
+	margin-bottom: 0;
 }
 
 input[type=submit]:hover {

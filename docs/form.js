@@ -1,16 +1,26 @@
-// Displays correct form content for either POST, PUT or DELETE
+// Help came from code used in - https://stackoverflow.com/questions/31799603/show-hide-multiple-divs-javascript
 
-$('.btn a').on('click', function (e) {
+var divs = ["post", "put", "delete"];
+var visibleDivId = null;
 
-	e.preventDefault();
+function showContent(divId) {
+	if(visibleDivId === divId) {
+		visibleDivId = null;
+	} else {
+		visibleDivId = divId;
+	}
+	hideContent();
+}
 
-	$(this).parent().addClass('active');
-	$(this).parent().siblings().removeClass('active');
-
-	target = $(this).attr('href');
-
-	$('.form_content > div').not(target).hide();
-
-	$(target).fadeIn(600);
-	
-});
+function hideContent() {
+	var i, divId, div;
+	for(i = 0; i < divs.length; i++) {
+		divId = divs[i];
+		div = document.getElementById(divId);
+		if(visibleDivId === divId) {
+			div.style.display = "block";
+		} else {
+			div.style.display = "none";
+		}
+	}
+}

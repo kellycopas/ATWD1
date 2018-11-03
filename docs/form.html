@@ -11,12 +11,12 @@
 	<div id="container">
 		
 		<div id="btns">
-			<ul>
-				<li><p>Action:</p></li>
-				<li class="btn active"><a href="#post">Post</a></li>
-				<li class="btn"><a href="#put">Put</a></li>
-				<li class="btn"><a href="#delete">Delete</a></li>
-			</ul>
+				<h3>Action:</h3>
+				<ul>
+					<li><a href="#post" onclick="showContent('post');">Post</a></li>
+					<li><a href="#put" onclick="showContent('put');">Put</a></li>
+					<li><a href="#delete" onclick="showContent('delete');">Delete</a></li>
+				</ul>
 		</div>
 
 	<div class="form_content">
@@ -26,13 +26,13 @@
 			<form class="main">
 				<div class="row">
 					<div class="col">
-						<label for="code"><sup style="font-size:10px;line-height:0.5;">*</sup>Currency Code:</label><br/>
+						<label for="code">Currency Code</label><br/>
 						<input type="text" name="ccode" placeholder="code (3 capital letters)">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
-						<label for="rate"><sup style="font-size:10px;line-height:0.5;">*</sup>New Rate (£ = 1):</label><br/>
+						<label for="rate">New Rate (£ = 1)</label><br/>
 						<input type="text" name="rate" placeholder="rate (decimal number)">
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 			<form class="output">
 				<div class="row">
 					<div class="col">
-						<label for="response">Response Message:</label><br/>
+						<label for="response">Response Message</label><br/>
 						<textarea id="post_response" name="response_message" placeholder="Response XML"></textarea>
 					</div>
 				</div>
@@ -57,25 +57,25 @@
 			<form class="main">
 				<div class="row">
 					<div class="col">
-						<label for="code"><sup style="font-size:10px;line-height:0.5;">*</sup>Currency Code:</label><br/>
+						<label for="code">Currency Code</label><br/>
 						<input type="text" name="ccode" placeholder="code (3 capital letters)">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
-						<label for="name"><sup style="font-size:10px;line-height:0.5;">*</sup>Currency Name:</label><br/>
+						<label for="name">Currency Name</label><br/>
 						<input type="text" name="cname" placeholder="name">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
-						<label for="rate"><sup style="font-size:10px;line-height:0.5;">*</sup>New Rate (£ = 1):</label><br/>
+						<label for="rate">New Rate (£ = 1)</label><br/>
 						<input type="text" name="rate" placeholder="rate (decimal number)">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
-						<label for="country"><sup style="font-size:10px;line-height:0.5;">*</sup>Countries (comma separated if 1+):</label><br/>
+						<label for="country">Countries (comma separated if 1+)</label><br/>
 						<input type="text" name="cntry" placeholder="countries">
 					</div>
 				</div>
@@ -87,7 +87,7 @@
 			<form class="output">
 				<div class="row">
 					<div class="col">
-						<label for="response">Response Message:</label><br/>
+						<label for="response">Response Message</label><br/>
 						<textarea id="put_response" name="response_message" placeholder="Response XML"></textarea>
 					</div>
 				</div>
@@ -100,7 +100,7 @@
 			<form class="main">
 				<div class="row">
 					<div class="col">
-						<label for="code"><sup style="font-size:10px;line-height:0.5;">*</sup>Currency Code:</label><br/>
+						<label for="code">Currency Code</label><br/>
 						<input type="text" name="ccode" placeholder="code (3 capital letters)">
 					</div>
 				</div>
@@ -112,7 +112,7 @@
 			<form class="output">
 				<div class="row">
 					<div class="col">
-						<label for="response">Response Message:</label><br/>
+						<label for="response">Response Message</label><br/>
 						<textarea id="delete_response" name="response_message" placeholder="Response XML"></textarea>
 					</div>
 				</div>
